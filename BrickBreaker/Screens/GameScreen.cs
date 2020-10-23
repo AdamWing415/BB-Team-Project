@@ -46,7 +46,7 @@ namespace BrickBreaker
         // list of all blocks for current level
         List<Block> blocks = new List<Block>();
         List<Powerups> Powerup = new List<Powerups>();
-        public static List<int> scores = new List<int>();
+        public static List<string> scores = new List<string>();
 
         // Brushes
 
@@ -433,7 +433,7 @@ namespace BrickBreaker
 
                 if (lives == 0)
                 {
-                    scores.Add(score);
+                    scores.Add(score + "");
                     scores.Sort();
 
                     gameTimer.Enabled = false;
