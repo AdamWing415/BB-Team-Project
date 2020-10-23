@@ -56,12 +56,14 @@
             this.exitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSalmon;
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.exitButton.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
-            this.exitButton.Location = new System.Drawing.Point(171, 423);
+
+            this.exitButton.Location = new System.Drawing.Point(228, 521);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(4);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(194, 77);
             this.exitButton.TabIndex = 250;
             this.exitButton.TabStop = false;
-            this.exitButton.Text = "Exit";
+            this.exitButton.Text = "Menu";
             this.exitButton.UseVisualStyleBackColor = false;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             this.exitButton.Enter += new System.EventHandler(this.exitButton_Enter);
@@ -76,7 +78,8 @@
             this.playAgainButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SpringGreen;
             this.playAgainButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.playAgainButton.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
-            this.playAgainButton.Location = new System.Drawing.Point(495, 423);
+            this.playAgainButton.Location = new System.Drawing.Point(660, 521);
+            this.playAgainButton.Margin = new System.Windows.Forms.Padding(4);
             this.playAgainButton.Name = "playAgainButton";
             this.playAgainButton.Size = new System.Drawing.Size(194, 77);
             this.playAgainButton.TabIndex = 200;
@@ -134,6 +137,7 @@
             this.letter3Output.UseVisualStyleBackColor = false;
             this.letter3Output.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.letter3Output_PreviewKeyDown);
             // 
+
             // GameOverScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,6 +145,7 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImage = global::BrickBreaker.Properties.Resources.game_screen_back;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+
             this.Controls.Add(this.letter3Output);
             this.Controls.Add(this.letter2Output);
             this.Controls.Add(this.letter1Output);
