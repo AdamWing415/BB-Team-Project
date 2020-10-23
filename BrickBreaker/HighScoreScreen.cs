@@ -32,20 +32,23 @@ namespace BrickBreaker
 
         private void HighScoreScreen_Load(object sender, EventArgs e)
         {
-            //needs XML reader code still
+
             nameOutput.ResetText();
             scoreOutput.ResetText();
 
             List<Scores> sortedList = Scores.scores.OrderBy(s => s.score).ToList();
-            //for (int i = 0; i < 10; i++)
-            //{
-            //    if (sortedList[i] != null)
-            //    {
-            //        nameOutput.Text += sortedList[i].name + "\n";
+            if (sortedList.Count() > 0)
+            {
+                for (int i = 0; i < sortedList.Count(); i++)
+                {
+                    if (i < 10)
+                    {
+                            nameOutput.Text += sortedList[i].name + "\n";
+                            scoreOutput.Text += sortedList[i].score + "\n";
+                    }
 
-            //        scoreOutput.Text += sortedList[i].score;
-            //    }
-            //}
+                }
+            }
         }
     }
 }
