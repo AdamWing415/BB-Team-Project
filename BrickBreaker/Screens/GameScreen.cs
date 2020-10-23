@@ -78,8 +78,6 @@ namespace BrickBreaker
                     int powerupType = powerGen.Next(1, 6);
                     if (b.hp == 1)
                     {
-
-
                         if (powerupChance == 1)
                         {
                             if (powerupType == 1) // add 300 points
