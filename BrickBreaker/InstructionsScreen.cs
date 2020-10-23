@@ -15,6 +15,7 @@ namespace BrickBreaker
         public InstructionsScreen()
         {
             InitializeComponent();
+            menuButton.Focus();
         }
         //goes back to the menu on click
         private void menuButton_Click(object sender, EventArgs e)
@@ -26,6 +27,7 @@ namespace BrickBreaker
             f.Controls.Add(ms);
 
             ms.Focus();
+            ms.Location = new Point((f.Width - ms.Width) / 2, (f.Height - ms.Height) / 2);
         }
     }
 }

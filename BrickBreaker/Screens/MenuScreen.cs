@@ -61,6 +61,7 @@ namespace BrickBreaker
             form.Controls.Remove(this);
             form.Controls.Add(hs);
 
+            hs.Focus();
             hs.Location = new Point((form.Width - hs.Width) / 2, (form.Height - hs.Height) / 2);
         }
         //goes to the instruction screen
@@ -73,6 +74,7 @@ namespace BrickBreaker
             f.Controls.Add(ins);
 
             ins.Focus();
+            ins.Location = new Point((f.Width - ins.Width) / 2, (f.Height - ins.Height) / 2);
         }
         //changes back colours
         private void instructionsButton_Enter(object sender, EventArgs e)

@@ -16,6 +16,7 @@ namespace BrickBreaker
         public HighScoreScreen()
         {
             InitializeComponent();
+            backButton.Focus();
         }
 
         private void backButton_Click(object sender, EventArgs e)
