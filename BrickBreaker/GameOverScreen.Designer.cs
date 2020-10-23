@@ -57,8 +57,8 @@
             this.exitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSalmon;
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.exitButton.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
-            this.exitButton.Location = new System.Drawing.Point(304, 641);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.exitButton.Location = new System.Drawing.Point(262, 476);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(5);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(259, 95);
             this.exitButton.TabIndex = 250;
@@ -78,8 +78,8 @@
             this.playAgainButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SpringGreen;
             this.playAgainButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.playAgainButton.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
-            this.playAgainButton.Location = new System.Drawing.Point(880, 641);
-            this.playAgainButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.playAgainButton.Location = new System.Drawing.Point(610, 476);
+            this.playAgainButton.Margin = new System.Windows.Forms.Padding(5);
             this.playAgainButton.Name = "playAgainButton";
             this.playAgainButton.Size = new System.Drawing.Size(259, 95);
             this.playAgainButton.TabIndex = 200;
@@ -151,7 +151,7 @@
             this.Controls.Add(this.playAgainButton);
             this.Controls.Add(this.gameOverLabel);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GameOverScreen";
             this.Size = new System.Drawing.Size(1139, 667);
             this.Load += new System.EventHandler(this.GameOverScreen_Load);
