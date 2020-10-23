@@ -83,6 +83,7 @@
             this.resumeButton.Text = "resume game";
             this.resumeButton.UseVisualStyleBackColor = false;
             this.resumeButton.Click += new System.EventHandler(this.resumeButton_Click);
+            this.resumeButton.Enter += new System.EventHandler(this.resumeButton_Enter);
             // 
             // menuButton
             // 
@@ -98,16 +99,19 @@
             this.menuButton.Text = "return to menu";
             this.menuButton.UseVisualStyleBackColor = false;
             this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
+            this.menuButton.Enter += new System.EventHandler(this.menuButton_Enter);
             // 
             // pauseLabel
             // 
             this.pauseLabel.BackColor = System.Drawing.Color.Transparent;
             this.pauseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.pauseLabel.ForeColor = System.Drawing.Color.Firebrick;
+
             this.pauseLabel.Location = new System.Drawing.Point(342, 254);
             this.pauseLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.pauseLabel.Name = "pauseLabel";
             this.pauseLabel.Size = new System.Drawing.Size(389, 60);
+
             this.pauseLabel.TabIndex = 3;
             this.pauseLabel.Text = "Game Paused";
             this.pauseLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -125,6 +129,7 @@
             this.Controls.Add(this.menuButton);
             this.Controls.Add(this.pauseLabel);
             this.DoubleBuffered = true;
+
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "GameScreen";
             this.Size = new System.Drawing.Size(1068, 678);

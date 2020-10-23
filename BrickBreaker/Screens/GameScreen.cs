@@ -177,12 +177,13 @@ namespace BrickBreaker
 
 
             // setup starting paddle values and create paddle object
-            int paddleWidth = 80;
+            int paddleWidth = 2000;
             int paddleHeight = 20;
             int paddleX = ((this.Width / 2) - (paddleWidth / 2));
             int paddleY = (this.Height - paddleHeight) - 60;
             int paddleSpeed = 8;
             paddle = new Paddle(paddleX, paddleY, paddleWidth, paddleHeight, paddleSpeed, Color.White);
+            score = 0;
 
             // setup starting ball values
             int ballX = this.Width / 2 - 10;
@@ -612,6 +613,18 @@ namespace BrickBreaker
         {
             gamePaused = false;
             OnEnd();
+        }
+
+        private void menuButton_Enter(object sender, EventArgs e)
+        {
+            menuButton.BackColor = Color.LightSalmon;
+            resumeButton.BackColor = Color.LightGray;
+        }
+
+        private void resumeButton_Enter(object sender, EventArgs e)
+        {
+            menuButton.BackColor = Color.LightGray;
+            resumeButton.BackColor = Color.LightSalmon;
         }
 
         private void resumeButton_Click(object sender, EventArgs e)

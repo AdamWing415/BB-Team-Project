@@ -117,4 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="powerupListLabel.Text" xml:space="preserve">
+    <value>- Green powerup makes the sword temporarily larger
+
+- Red powerup gives one extra life
+
+- Blue powerup gives 300 points
+
+- Pink powerup raises the speed of the paddle
+
+- Yellow powerup adds an extra ball</value>
+  </data>
 </root>

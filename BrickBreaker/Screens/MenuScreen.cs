@@ -36,7 +36,7 @@ namespace BrickBreaker
 
         private void playButton_Enter(object sender, EventArgs e)
         {
-
+            playButton.BackColor = Color.LightSalmon;
             exitButton.BackColor = Color.LightGray;
             highScoreButton.BackColor = Color.LightGray;
             instructionsButton.BackColor = Color.LightGray;
@@ -45,8 +45,7 @@ namespace BrickBreaker
 
         private void exitButton_Enter(object sender, EventArgs e)
         {
-            highScoreButton.BackColor = Color.Silver;
-            playButton.BackColor = Color.Silver;
+            playButton.BackColor = Color.LightGray;
             exitButton.BackColor = Color.LightSalmon;
             highScoreButton.BackColor = Color.LightGray;
             instructionsButton.BackColor = Color.LightGray;
@@ -87,10 +86,11 @@ namespace BrickBreaker
         {
             highScoreButton.BackColor = Color.LightSalmon;
             exitButton.BackColor = Color.LightGray;
-            playButton.BackColor = Color.Silver;
 
+            playButton.BackColor = Color.LightGray;
+            instructionsButton.BackColor = Color.LightGray;
+        }
 
-         }
       }
     }
 

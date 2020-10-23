@@ -351,9 +351,8 @@ namespace BrickBreaker
         {
             playAgainButton.BackColor = Color.LightGray;
             exitButton.BackColor = Color.LightGray;
+
         }
-
-
 
         private void exitButton_Enter(object sender, EventArgs e)
         {
