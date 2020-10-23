@@ -133,6 +133,7 @@
             this.letter3Output.UseVisualStyleBackColor = false;
             this.letter3Output.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.letter3Output_PreviewKeyDown);
             // 
+
             // GameOverScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);

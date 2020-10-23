@@ -351,15 +351,14 @@ namespace BrickBreaker
         {
             playAgainButton.BackColor = Color.LightGray;
             exitButton.BackColor = Color.LightGray;
-           // menuButton.BackColor = Color.LightSalmon;
         }
+
 
 
         private void exitButton_Enter(object sender, EventArgs e)
         {
             playAgainButton.BackColor = Color.LightGray;
             exitButton.BackColor = Color.LightSalmon;
-           // menuButton.BackColor = Color.LightGray;
         }
 
         private void GameOverScreen_Load(object sender, EventArgs e)
