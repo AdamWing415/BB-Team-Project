@@ -142,27 +142,27 @@
             // 
             // menuButton
             // 
-            this.menuButton.BackColor = System.Drawing.Color.White;
-            this.menuButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.menuButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SpringGreen;
-            this.menuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SpringGreen;
-            this.menuButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.menuButton.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
-            this.menuButton.Location = new System.Drawing.Point(334, 423);
-            this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(194, 77);
-            this.menuButton.TabIndex = 12;
-            this.menuButton.Text = "Return to Menu";
-            this.menuButton.UseVisualStyleBackColor = false;
-            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
-            this.menuButton.Enter += new System.EventHandler(this.menuButton_Enter);
+            //this.menuButton.BackColor = System.Drawing.Color.White;
+            //this.menuButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            //this.menuButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SpringGreen;
+            //this.menuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SpringGreen;
+            //this.menuButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            //this.menuButton.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
+            //this.menuButton.Location = new System.Drawing.Point(334, 423);
+            //this.menuButton.Name = "menuButton";
+            //this.menuButton.Size = new System.Drawing.Size(194, 77);
+            //this.menuButton.TabIndex = 12;
+            //this.menuButton.Text = "Return to Menu";
+            //this.menuButton.UseVisualStyleBackColor = false;
+            //this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
+            //this.menuButton.Enter += new System.EventHandler(this.menuButton_Enter);
             // 
             // GameOverScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.Controls.Add(this.menuButton);
+            //this.Controls.Add(this.menuButton);
             this.Controls.Add(this.letter3Output);
             this.Controls.Add(this.letter2Output);
             this.Controls.Add(this.letter1Output);

@@ -364,8 +364,10 @@ namespace BrickBreaker
             #region Check for ball hitting bottom of screen
             if (ball.BottomCollision(this))
             {
-                lives--;
-
+                if (powerupBall.Count() < 1)
+                {
+                    lives--;
+                }
                 livesLabel.Text = "";
                 livesLabel.Text = "Lives: " + lives;
 
@@ -381,7 +383,7 @@ namespace BrickBreaker
                 paddle.width = 80;
 
 
-                paddle.speed = 5;
+                
 
                 if (powerupBall.Count >= 1)
                 {
