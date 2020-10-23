@@ -37,6 +37,7 @@ namespace BrickBreaker
             scoreOutput.ResetText();
 
             List<Scores> sortedList = Scores.scores.OrderBy(s => s.score).ToList();
+            
             if (sortedList.Count() > 0)
             {
                 for (int i = 0; i < sortedList.Count(); i++)

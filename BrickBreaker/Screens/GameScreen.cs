@@ -469,8 +469,6 @@ namespace BrickBreaker
 
                 if (lives == 0)
                 {
-                    scores.Add(score);
-                    scores.Sort();
 
                     gameTimer.Enabled = false;
                     OnEnd();
