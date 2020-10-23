@@ -4,6 +4,7 @@ namespace BrickBreaker
 {
     public class Paddle
     {
+        //creates a paddle object
         public int x, y, width, height, speed;
         public Color colour;
 
@@ -17,6 +18,7 @@ namespace BrickBreaker
             colour = _colour;
         }
 
+        //moves the paddle object
         public void Move(string direction)
         {
             if (direction == "left")

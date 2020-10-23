@@ -42,11 +42,12 @@
             // titleLabel
             // 
             this.titleLabel.BackColor = System.Drawing.Color.Transparent;
-            this.titleLabel.Font = new System.Drawing.Font("Old English Text MT", 50F);
+            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
             this.titleLabel.ForeColor = System.Drawing.Color.Firebrick;
-            this.titleLabel.Location = new System.Drawing.Point(-3, 18);
+            this.titleLabel.Location = new System.Drawing.Point(-4, 22);
+            this.titleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(854, 76);
+            this.titleLabel.Size = new System.Drawing.Size(1139, 94);
             this.titleLabel.TabIndex = 4;
             this.titleLabel.Text = "Instructions";
             this.titleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -55,9 +56,10 @@
             // 
             this.winInstructionLabel.BackColor = System.Drawing.Color.Transparent;
             this.winInstructionLabel.Font = new System.Drawing.Font("Times New Roman", 20F);
-            this.winInstructionLabel.Location = new System.Drawing.Point(315, 246);
+            this.winInstructionLabel.Location = new System.Drawing.Point(420, 303);
+            this.winInstructionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.winInstructionLabel.Name = "winInstructionLabel";
-            this.winInstructionLabel.Size = new System.Drawing.Size(208, 173);
+            this.winInstructionLabel.Size = new System.Drawing.Size(277, 213);
             this.winInstructionLabel.TabIndex = 5;
             this.winInstructionLabel.Text = "- To win, destroy all displayed bricks by bouncing the canon ball towards them us" +
     "ing the sword";
@@ -67,9 +69,10 @@
             // 
             this.moveInstructionLabel.BackColor = System.Drawing.Color.Transparent;
             this.moveInstructionLabel.Font = new System.Drawing.Font("Times New Roman", 20F);
-            this.moveInstructionLabel.Location = new System.Drawing.Point(315, 94);
+            this.moveInstructionLabel.Location = new System.Drawing.Point(420, 116);
+            this.moveInstructionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.moveInstructionLabel.Name = "moveInstructionLabel";
-            this.moveInstructionLabel.Size = new System.Drawing.Size(208, 152);
+            this.moveInstructionLabel.Size = new System.Drawing.Size(277, 187);
             this.moveInstructionLabel.TabIndex = 6;
             this.moveInstructionLabel.Text = "- Use left and right arrows to move paddle";
             this.moveInstructionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -78,9 +81,10 @@
             // 
             this.hpInstructionLabel.BackColor = System.Drawing.Color.Transparent;
             this.hpInstructionLabel.Font = new System.Drawing.Font("Times New Roman", 20F);
-            this.hpInstructionLabel.Location = new System.Drawing.Point(61, 94);
+            this.hpInstructionLabel.Location = new System.Drawing.Point(81, 116);
+            this.hpInstructionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.hpInstructionLabel.Name = "hpInstructionLabel";
-            this.hpInstructionLabel.Size = new System.Drawing.Size(248, 177);
+            this.hpInstructionLabel.Size = new System.Drawing.Size(331, 218);
             this.hpInstructionLabel.TabIndex = 7;
             this.hpInstructionLabel.Text = "- Cracked bricks have 1 HP, normal bricks have 2 HP, and golden bricks have 3 HP";
             this.hpInstructionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -89,9 +93,10 @@
             // 
             this.loseInstructionLabel.BackColor = System.Drawing.Color.Transparent;
             this.loseInstructionLabel.Font = new System.Drawing.Font("Times New Roman", 20F);
-            this.loseInstructionLabel.Location = new System.Drawing.Point(61, 271);
+            this.loseInstructionLabel.Location = new System.Drawing.Point(81, 334);
+            this.loseInstructionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.loseInstructionLabel.Name = "loseInstructionLabel";
-            this.loseInstructionLabel.Size = new System.Drawing.Size(248, 148);
+            this.loseInstructionLabel.Size = new System.Drawing.Size(331, 182);
             this.loseInstructionLabel.TabIndex = 8;
             this.loseInstructionLabel.Text = "- Don\'t let the canon ball hit the ground, or else you will lose a life\r\n";
             this.loseInstructionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -103,9 +108,10 @@
             this.menuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSalmon;
             this.menuButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.menuButton.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
-            this.menuButton.Location = new System.Drawing.Point(329, 422);
+            this.menuButton.Location = new System.Drawing.Point(439, 519);
+            this.menuButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(194, 77);
+            this.menuButton.Size = new System.Drawing.Size(259, 95);
             this.menuButton.TabIndex = 9;
             this.menuButton.Text = "Return to Menu";
             this.menuButton.UseVisualStyleBackColor = false;
@@ -116,9 +122,10 @@
             this.powerupLabel.AutoSize = true;
             this.powerupLabel.BackColor = System.Drawing.Color.Transparent;
             this.powerupLabel.Font = new System.Drawing.Font("Times New Roman", 20F);
-            this.powerupLabel.Location = new System.Drawing.Point(607, 94);
+            this.powerupLabel.Location = new System.Drawing.Point(809, 116);
+            this.powerupLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.powerupLabel.Name = "powerupLabel";
-            this.powerupLabel.Size = new System.Drawing.Size(157, 31);
+            this.powerupLabel.Size = new System.Drawing.Size(199, 39);
             this.powerupLabel.TabIndex = 10;
             this.powerupLabel.Text = "POWERUPS";
             // 
@@ -126,19 +133,20 @@
             // 
             this.powerupListLabel.BackColor = System.Drawing.Color.Transparent;
             this.powerupListLabel.Font = new System.Drawing.Font("Times New Roman", 15F);
-            this.powerupListLabel.Location = new System.Drawing.Point(522, 125);
+            this.powerupListLabel.Location = new System.Drawing.Point(696, 154);
+            this.powerupListLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.powerupListLabel.Name = "powerupListLabel";
-            this.powerupListLabel.Size = new System.Drawing.Size(329, 294);
+            this.powerupListLabel.Size = new System.Drawing.Size(439, 362);
             this.powerupListLabel.TabIndex = 11;
             this.powerupListLabel.Text = resources.GetString("powerupListLabel.Text");
             this.powerupListLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // InstructionsScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BrickBreaker.Properties.Resources.game_screen_back;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.powerupListLabel);
             this.Controls.Add(this.powerupLabel);
             this.Controls.Add(this.menuButton);
@@ -148,8 +156,9 @@
             this.Controls.Add(this.winInstructionLabel);
             this.Controls.Add(this.titleLabel);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "InstructionsScreen";
-            this.Size = new System.Drawing.Size(854, 542);
+            this.Size = new System.Drawing.Size(1139, 667);
             this.ResumeLayout(false);
             this.PerformLayout();
 

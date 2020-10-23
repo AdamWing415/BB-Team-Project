@@ -9,7 +9,7 @@ namespace BrickBreaker
 {
     class Powerups
     {
-
+        //creates a powerup object 
 
         public int size, x, y;
         public string type;
@@ -23,6 +23,7 @@ namespace BrickBreaker
             powerupBrush = _powerBrush;
         }
 
+        //moves powerup object
         public void Move(int speed)
         {
             y += speed;

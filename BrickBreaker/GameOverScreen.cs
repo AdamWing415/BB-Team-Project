@@ -79,10 +79,12 @@ namespace BrickBreaker
 
         private void playAgainButton_Enter(object sender, EventArgs e)
         {
+            //plays again and adds high score
             playAgainButton.BackColor = Color.LightSalmon;
             exitButton.BackColor = Color.LightGray;
         }
 
+        //detects controls for the first letter and changes letter or focus based on input
         private void letter1Output_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             switch (e.KeyCode)
@@ -147,7 +149,7 @@ namespace BrickBreaker
                     break;
             }
         }
-
+        //detects controls for the second letter and changes letter or focus based on input
         private void letter2Output_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             switch (e.KeyCode)
@@ -211,7 +213,7 @@ namespace BrickBreaker
                     break;
             }
         }
-
+        //detects controls for the third letter and changes letter or focus based on input
         private void letter3Output_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             switch (e.KeyCode)
@@ -278,6 +280,7 @@ namespace BrickBreaker
             }
         }
 
+        //detects controls for the exit button and changes focus based on input
         private void exitButton_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             switch (e.KeyCode)
@@ -307,7 +310,7 @@ namespace BrickBreaker
                     break;
             }
         }
-
+        //detects controls for the play again button and changes focus based on input
         private void playAgainButton_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             switch (e.KeyCode)
@@ -336,30 +339,14 @@ namespace BrickBreaker
             }
         }
 
-        private void menuButton_Click(object sender, EventArgs e)
-        {
-            Form f = this.FindForm();
-            MenuScreen ms = new MenuScreen();
-
-            f.Controls.Remove(this);
-            f.Controls.Add(ms);
-
-            ms.Focus();
-        }
-
-        private void menuButton_Enter(object sender, EventArgs e)
-        {
-            playAgainButton.BackColor = Color.LightGray;
-            exitButton.BackColor = Color.LightGray;
-
-        }
-
+        //changes back colours
         private void exitButton_Enter(object sender, EventArgs e)
         {
             playAgainButton.BackColor = Color.LightGray;
             exitButton.BackColor = Color.LightSalmon;
         }
 
+        //displays header and letters on load
         private void GameOverScreen_Load(object sender, EventArgs e)
         {
             if(GameScreen.win == true)

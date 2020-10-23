@@ -23,6 +23,7 @@ namespace BrickBreaker
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            //reads scores from xml and adds to the scores list
             TsunamiReadXML();
 
             // Start the program centred on the Menu Screen
@@ -34,7 +35,7 @@ namespace BrickBreaker
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            //Need to add existing scores to the list in scores to keep them from being deleted on write(complete this action on reading the xml)
+           //writes scores to an xml
 
             XmlWriter writer = XmlWriter.Create("Resources/ScoreXML.xml", null);
 

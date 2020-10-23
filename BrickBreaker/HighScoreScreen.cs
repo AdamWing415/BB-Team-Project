@@ -32,7 +32,7 @@ namespace BrickBreaker
 
         private void HighScoreScreen_Load(object sender, EventArgs e)
         {
-
+            //sorts the high scores and displays them
             nameOutput.ResetText();
             scoreOutput.ResetText();
 

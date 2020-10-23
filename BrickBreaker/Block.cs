@@ -9,6 +9,7 @@ namespace BrickBreaker
 {
     public class Block
     {
+        //makes block objects
         public int width = 50;
         public int height = 25;
 

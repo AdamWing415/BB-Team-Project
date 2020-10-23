@@ -16,7 +16,7 @@ namespace BrickBreaker
         {
             InitializeComponent();
         }
-
+        //goes back to the menu on click
         private void menuButton_Click(object sender, EventArgs e)
         {
             Form f = this.FindForm();

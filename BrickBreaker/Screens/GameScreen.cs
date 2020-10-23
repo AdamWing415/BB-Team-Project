@@ -25,7 +25,7 @@ namespace BrickBreaker
         #region global values
 
 
-        //New List for new happiness
+        //New List for power up ball
         List<Ball> powerupBall = new List<Ball>();
         //player1 button control keys - DO NOT CHANGE
         Boolean leftArrowDown, rightArrowDown, escKeyDown, spaceDown, gamePaused, paddleMove;
@@ -62,6 +62,7 @@ namespace BrickBreaker
 
         }
 
+        //ian's method for spawning, controlling, and excuting power ups and their effects
         public void IanMethod()
         {
             string type = "";
@@ -165,6 +166,7 @@ namespace BrickBreaker
             }
         }
 
+        //runs all game start code
         public void OnStart()
         {
 
@@ -209,6 +211,7 @@ namespace BrickBreaker
             gameTimer.Enabled = true;
         }
 
+        //loads levels from an xml
         private void TsunamiLevelLoad()
         {
 
@@ -236,6 +239,7 @@ namespace BrickBreaker
             }
         }
 
+        //key down for teh game, also changes teh launch angle when appropriate
         private void GameScreen_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             //player 1 button presses
@@ -299,7 +303,7 @@ namespace BrickBreaker
                     break;
             }
         }
-
+        //key up for the game screen
         private void GameScreen_KeyUp(object sender, KeyEventArgs e)
         {
             //player 1 button releases
@@ -323,6 +327,7 @@ namespace BrickBreaker
             }
         }
 
+        //game timer tick, runs all appropriate code every 15ms
         private void gameTimer_Tick(object sender, EventArgs e)
         {
             livesLabel.Text = "Lives: " + lives;
@@ -332,6 +337,7 @@ namespace BrickBreaker
 
             #region Move the paddle
 
+            //checks if paddle width is  bigger and subtracts from it slowly
             if (paddle.width > 80 && counter % 5 == 0)
             {
                 paddle.width--;
@@ -358,7 +364,7 @@ namespace BrickBreaker
                 }
             }
 
-
+            //launches the ball when appropriate
             if (ball.xSpeed == 0 && ball.ySpeed == 00 && spaceDown == true && leftArrowDown == true)
             {
                 ball.xSpeed = -6;
@@ -524,7 +530,7 @@ namespace BrickBreaker
                             blocks.Remove(b);
                         }
 
-                        if (blocks.Count == 0 && level == 5)
+                        if (blocks.Count == 0 && level == 8)
 
                         {
 
@@ -571,7 +577,7 @@ namespace BrickBreaker
                             blocks.Remove(b);
                         }
 
-                        if (blocks.Count == 0 && level == 5)
+                        if (blocks.Count == 0 && level == 8)
 
                         {
 
@@ -593,7 +599,7 @@ namespace BrickBreaker
             }
             #endregion
 
-
+            //changes appropriate values
             pauseScreenEnabled();
             counter++;
             prevX = ball.x;
@@ -608,25 +614,38 @@ namespace BrickBreaker
             Refresh();
         }
 
-
+        //returns to menu on click
         private void menuButton_Click(object sender, EventArgs e)
         {
             gamePaused = false;
-            OnEnd();
+            #region change screen
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+
+            MenuScreen ms = new MenuScreen();
+            f.Controls.Add(ms);
+
+            ms.Location = new Point((f.Width - ms.Width) / 2, (f.Height - ms.Height) / 2);
+
+            ms.Focus();
+            #endregion
         }
 
+        //changes backcolours
         private void menuButton_Enter(object sender, EventArgs e)
         {
             menuButton.BackColor = Color.LightSalmon;
             resumeButton.BackColor = Color.LightGray;
         }
 
+        //changes backcolours
         private void resumeButton_Enter(object sender, EventArgs e)
         {
             menuButton.BackColor = Color.LightGray;
             resumeButton.BackColor = Color.LightSalmon;
         }
 
+        //resumes the game
         private void resumeButton_Click(object sender, EventArgs e)
         {
             if (level < 6)
@@ -648,7 +667,9 @@ namespace BrickBreaker
 
 
         }
-        // Both below functions error out when given time to load
+
+
+        //runs the game over code and goes to the game end screen
         public void OnEnd()
         {
             gameTimer.Stop();
@@ -664,6 +685,8 @@ namespace BrickBreaker
 
             gos.Focus();
         }
+
+        //runs teh win code and goes to the game end screen
         public void OnWin()
         {
 
@@ -680,6 +703,7 @@ namespace BrickBreaker
             gos.Focus();
         }
 
+        //paints every appropriate object to the screen 
         public void GameScreen_Paint(object sender, PaintEventArgs e)
         {
             #region Draws paddle
@@ -754,6 +778,7 @@ namespace BrickBreaker
 
         }
 
+        //enables the pause screen
         public void pauseScreenEnabled()
         {
             if (escKeyDown)

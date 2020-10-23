@@ -41,7 +41,7 @@
             // 
             this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.backButton.Location = new System.Drawing.Point(4, 4);
-            this.backButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backButton.Margin = new System.Windows.Forms.Padding(4);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(89, 43);
             this.backButton.TabIndex = 0;
@@ -51,7 +51,9 @@
             // 
             // highScoreHeader
             // 
+            this.highScoreHeader.BackColor = System.Drawing.Color.Transparent;
             this.highScoreHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.highScoreHeader.ForeColor = System.Drawing.Color.Firebrick;
             this.highScoreHeader.Location = new System.Drawing.Point(369, 36);
             this.highScoreHeader.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.highScoreHeader.Name = "highScoreHeader";
@@ -123,6 +125,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
+            this.BackgroundImage = global::BrickBreaker.Properties.Resources.game_screen_back;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.nameHeader);
             this.Controls.Add(this.scoreHeader);
             this.Controls.Add(this.scoreOutput);
@@ -130,7 +134,8 @@
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.highScoreHeader);
             this.Controls.Add(this.backButton);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "HighScoreScreen";
             this.Size = new System.Drawing.Size(1139, 667);
             this.Load += new System.EventHandler(this.HighScoreScreen_Load);

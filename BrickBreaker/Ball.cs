@@ -7,8 +7,9 @@ namespace BrickBreaker
 {
     public class Ball
     {
+        //creates the ball class
         public int x, y, xSpeed, ySpeed, size;
-        public Color colour;
+   
 
         public static Random rand = new Random();
 
@@ -25,13 +26,14 @@ namespace BrickBreaker
             size = _ballSize;
                
         }
-
+        //moves the ball
         public void Move()
         {
             x = x + xSpeed;
             y = y + ySpeed;
         }
 
+        //checks if block collision is true and then runs the collision code in the game screen
         public bool BlockCollision(Block b)
         {
             Rectangle blockRec = new Rectangle(b.x, b.y, 50, 25);
@@ -45,6 +47,7 @@ namespace BrickBreaker
             return blockRec.IntersectsWith(ballRec);         
         }
 
+        //checks for paddle collision
         public void PaddleCollision(Paddle p, bool pMovingLeft, bool pMovingRight)
         {
             Rectangle ballRec = new Rectangle(x, y, size, size);
@@ -83,6 +86,7 @@ namespace BrickBreaker
             }
         }
 
+        //checks for wall collision
         public void WallCollision(UserControl UC)
         {
             // Collision with left wall
@@ -108,6 +112,7 @@ namespace BrickBreaker
             }
         }
 
+        //checks for wall collision
         public bool BottomCollision(UserControl UC)
         {
             Boolean didCollide = false;

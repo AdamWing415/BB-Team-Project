@@ -42,9 +42,10 @@
             this.playButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SpringGreen;
             this.playButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.playButton.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
-            this.playButton.Location = new System.Drawing.Point(103, 390);
+            this.playButton.Location = new System.Drawing.Point(129, 488);
+            this.playButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.playButton.Name = "playButton";
-            this.playButton.Size = new System.Drawing.Size(194, 77);
+            this.playButton.Size = new System.Drawing.Size(242, 96);
             this.playButton.TabIndex = 0;
             this.playButton.Text = "Play Game";
             this.playButton.UseVisualStyleBackColor = false;
@@ -58,9 +59,10 @@
             this.exitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSalmon;
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.exitButton.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
-            this.exitButton.Location = new System.Drawing.Point(330, 437);
+            this.exitButton.Location = new System.Drawing.Point(412, 546);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(194, 77);
+            this.exitButton.Size = new System.Drawing.Size(242, 96);
             this.exitButton.TabIndex = 2;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = false;
@@ -74,13 +76,15 @@
             this.highScoreButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSalmon;
             this.highScoreButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.highScoreButton.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
-            this.highScoreButton.Location = new System.Drawing.Point(330, 342);
+            this.highScoreButton.Location = new System.Drawing.Point(412, 428);
+            this.highScoreButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.highScoreButton.Name = "highScoreButton";
-            this.highScoreButton.Size = new System.Drawing.Size(194, 77);
+            this.highScoreButton.Size = new System.Drawing.Size(242, 96);
             this.highScoreButton.TabIndex = 1;
             this.highScoreButton.Text = "High Scores";
             this.highScoreButton.UseVisualStyleBackColor = false;
             this.highScoreButton.Click += new System.EventHandler(this.highScoreButton_Click);
+            this.highScoreButton.Enter += new System.EventHandler(this.highScoreButton_Enter);
             // 
             // instructionsButton
             // 
@@ -89,10 +93,10 @@
             this.instructionsButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSalmon;
             this.instructionsButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.instructionsButton.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
-            this.instructionsButton.Location = new System.Drawing.Point(556, 390);
-            this.instructionsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.instructionsButton.Location = new System.Drawing.Point(695, 488);
+            this.instructionsButton.Margin = new System.Windows.Forms.Padding(2);
             this.instructionsButton.Name = "instructionsButton";
-            this.instructionsButton.Size = new System.Drawing.Size(197, 77);
+            this.instructionsButton.Size = new System.Drawing.Size(246, 96);
             this.instructionsButton.TabIndex = 6;
             this.instructionsButton.Text = "Instructions";
             this.instructionsButton.UseVisualStyleBackColor = false;
@@ -101,7 +105,7 @@
             // 
             // MenuScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImage = global::BrickBreaker.Properties.Resources.title_screen_brick_breaker;
@@ -112,8 +116,9 @@
             this.Controls.Add(this.playButton);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Black;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MenuScreen";
-            this.Size = new System.Drawing.Size(854, 542);
+            this.Size = new System.Drawing.Size(1068, 678);
             this.ResumeLayout(false);
 
         }
